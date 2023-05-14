@@ -10,7 +10,6 @@ const PromptCard = ({post, handleTagClick, handleEdit, handleDelete}) => {
   const {data: session} = useSession()
   const pathName = usePathname()
   const router = useRouter()
-
   const [copied, setCopied] = useState('')
 
   const handleCopy = () => {
@@ -48,6 +47,7 @@ const PromptCard = ({post, handleTagClick, handleEdit, handleDelete}) => {
             }
             width={12}
             height={12}
+            alt="copy button"
           />
         </div>
       </div>
